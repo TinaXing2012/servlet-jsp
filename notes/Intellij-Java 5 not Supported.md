@@ -27,4 +27,4 @@ In the toolbar, find \
 Intellij IDEA -> Preferences -> Build, Execution, Deployment -> Java Compiler \
 On the right panel, find your module, change "Targeted bytecode version" to the version you need. The default one is set to 1.5
 
-![Screenshot](change module compiler version.png)
+![Screenshot](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/change%20module%20compiler%20version.png)
