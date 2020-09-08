@@ -1,4 +1,4 @@
-# Java Servlet and JSP Tutorial
+# Servlet and JSP Tutorial
 
 
 ## Errors/Bugs you may also face:
