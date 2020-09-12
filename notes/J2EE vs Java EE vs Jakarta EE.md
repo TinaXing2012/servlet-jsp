@@ -15,6 +15,8 @@ Obviously, from the result, we can see Eclipse Foundation renamed Java EE to Jak
 
 In a nutshell, J2EE, Java EE and Jakarta EE are referred to the same thing.
 
+references: https://www.baeldung.com/java-enterprise-evolution
+
 
 
 
