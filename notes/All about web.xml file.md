@@ -86,3 +86,20 @@ As you can see, those settings are kind of global settings of an application. An
 
 From Servlet 3.0, you can also programmatically configure those via ServletContainerInitializer to configure some of them.
 
+## pom.xml error: missing web.xml
+You may see this error in pom.xml: "missing web.xml" if you use annotation as configuration and no web.xml existing under WEB-INF/ directory.
+
+This happens when you're using an older version of Maven WAR Plugin. You can set configuration flag failOnMissingWebXml to false to fix the error.
+
+<build>
+    <plugins>
+        <plugin>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>2.4</version>
+            <configuration>
+                <failOnMissingWebXml>false</failOnMissingWebXml>    
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+Or better yet, if you upgrade your plugin version to 3+, the default value of failOnMissingWebXml is now set to false and does not need to be explicitly specified anymore.
