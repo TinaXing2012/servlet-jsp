@@ -64,7 +64,7 @@ Tomcat also has default welcome file list. If we didn't specify in our applicati
 
 4. TODO: More can be configured in web.xml, add later...
 
-##Why web.xml isn’t popular?
+## Why web.xml isn’t popular?
 
 XML was used to transfer content over the network. Since JSON is available, XML became less appeal.
 The same amount content to be carried by XML and JSON, the JSON's load is much smaller than XML's.
