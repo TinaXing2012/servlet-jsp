@@ -17,4 +17,9 @@ public class HelloWorldServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
         out.println("Current Time: " + LocalDateTime.now());
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        super.doPost(req, resp);
+    }
 }
