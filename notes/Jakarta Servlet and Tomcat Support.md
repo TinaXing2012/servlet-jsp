@@ -1,4 +1,4 @@
-# Servlet and Tomcat Support
+# Servlet and Tomcat Compatibility
 
 I don't find a good title for this blog. Just want to summarize which version of Tomcat support which Servlet.
 
