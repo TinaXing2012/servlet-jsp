@@ -33,6 +33,10 @@ public class Request {
         return requestParameters;
     }
 
+    public String getRequestParameter(String name){
+        return requestParameters.get(name);
+    }
+
     //queryString:   user=missxing&pwd=1234&birth=2010-10-10&country=China
     private void parseRequestParams(String queryString) {
         for (String pair : queryString.split("&")) {
@@ -40,7 +44,6 @@ public class Request {
             requestParameters.put(pairArr[0], pairArr[1]);
         }
     }
-
 
     public boolean parse() throws IOException {
         String line = in.readLine(); //GET /hello?user=missxing&pwd=1234 HTTP/1.1
@@ -66,7 +69,20 @@ public class Request {
             }
         }
 
+        if("POST".equals(method)){
+            StringBuilder body = new StringBuilder();
+            while (in.ready()){
+                body.append((char)in.read());
+            }
+//            System.out.println(body.toString());
+            parseRequestParams(body.toString());
+        }
+
+
+
         //TODO: Parse POST request body info into requestParameters
+
+
         return true;
     }
 }
