@@ -35,4 +35,9 @@ public class SignupServlet extends HttpServlet {
         out.println("doPost() in SignupServlet.........");
         out.println("</body></html>");
     }
+
+    @Override
+    public void destory() {
+        System.out.println("close connections in SignupServlet destory() *******");
+    }
 }

@@ -24,4 +24,9 @@ public abstract class HttpServlet {
     public void doPost(Request request, Response response){
         System.out.println("HttpServlet doPost Default Impl....");
     }
+
+    public void destory(){
+        System.out.println("HttpServlet destory() Default Impl....");
+    }
+
 }

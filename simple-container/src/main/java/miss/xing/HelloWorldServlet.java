@@ -20,4 +20,9 @@ public class HelloWorldServlet extends HttpServlet {
         out.println("doGet() in HelloWorldServlet");
         out.println("</body></html>");
     }
+
+    @Override
+    public void destory() {
+        System.out.println("clean up resources in HelloWorldServlet destory()......");
+    }
 }
