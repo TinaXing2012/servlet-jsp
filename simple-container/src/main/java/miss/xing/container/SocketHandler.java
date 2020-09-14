@@ -24,12 +24,21 @@ public class SocketHandler extends Thread {
         PrintWriter out = null;
         try {
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            String line = in.readLine();
+            out = new PrintWriter(socket.getOutputStream());
 
-            while (!line.isEmpty()) {
-                System.out.println(line);
-                line = in.readLine();
+            Request request = new Request(in);
+            if (!request.parse()) {
+                out.println("HTTP/1.1 500 Internal Server Error");
+                out.println("Content-Type: text/plain");
+                out.println(); // \r\n
+                out.println("<html><body>Cannot process your request </body></html> ");
+                out.flush();
             }
+
+            System.out.println("Method: " + request.getMethod());
+            System.out.println("Path: " + request.getPath());
+            request.getRequestParameters().forEach((key, value) -> System.out.println("Param Name: " + key + ", param value: " + value));
+            request.getHeaders().forEach((key, value) -> System.out.println("header Name: " + key + ", header value: " + value));
 
             out = new PrintWriter(socket.getOutputStream());
             out.println("HTTP/1.1 200 OK");
