@@ -6,15 +6,22 @@ public abstract class HttpServlet {
         System.out.println("HttpServlet Init Default Impl....");
     }
 
-    public void service(){ //TODO: Request, Response Object as Parameters
-
+    public void service(Request request, Response response){
+        String method = request.getMethod();
+        if("GET".equals(method)){
+            this.doGet(request, response);
+        } else if("POST".equals(method)){
+            this.doPost(request, response);
+        } else {
+            throw new RuntimeException("Method not Supported!");
+        }
     }
 
-    public void doGet(){
+    public void doGet(Request request, Response response){
         System.out.println("HttpServlet doGet Default Impl....");
     }
 
-    public void doPost(){
+    public void doPost(Request request, Response response){
         System.out.println("HttpServlet doPost Default Impl....");
     }
 }

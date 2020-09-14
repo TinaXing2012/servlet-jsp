@@ -1,6 +1,10 @@
 package miss.xing;
 
 import miss.xing.container.HttpServlet;
+import miss.xing.container.Request;
+import miss.xing.container.Response;
+
+import java.io.PrintWriter;
 
 public class HelloWorldServlet extends HttpServlet {
 
@@ -10,7 +14,10 @@ public class HelloWorldServlet extends HttpServlet {
     }
 
     @Override
-    public void doGet() {
-        System.out.println("HelloWorldServlet doGet()....");
+    public void doGet(Request request, Response response) {
+        PrintWriter out = response.getPrintWriter();
+        out.println("<html><body>");
+        out.println("doGet() in HelloWorldServlet");
+        out.println("</body></html>");
     }
 }
