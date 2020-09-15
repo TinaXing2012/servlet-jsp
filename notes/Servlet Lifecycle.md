@@ -86,7 +86,7 @@ NOTE:
 * How many times are doXXX()() being called? As many times as many requests come.
 * Override doXXX()() in our servlets? Absolutely 100%. Here are the place you implement business logic.
 
-6. The destory() method is called only once at the end of the life cycle of a servlet.
+6.The destory() method is called only once at the end of the life cycle of a servlet.
  This method gives you a chance to close database connections, halt background threads, and perform other cleanup activities.
  After the destory() method is called, the servlet object is marked for garbage collection.
 ``` java
