@@ -98,3 +98,7 @@ public void destroy() {
 NOTE:
 * How many times as init() being called? Only once. Zero could be a valid answer though, if no request comes to a servlet, by default, Tomcat won't instantiate it.
 * Override destory() method in our servlets? As your need.
+
+
+Here is a diagram of Servlet Lifecycle
+![Servlet Lifecycle](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/lifecycle.png)
