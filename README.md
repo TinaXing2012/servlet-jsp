@@ -8,3 +8,4 @@
 * [All about web.xml file](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/All%20about%20web.xml%20file.md)
 * [The usage of @WebServlet annotation](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/%40WebServlet.md)
 * [Java/Jakarta Servlet Life Cycle](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/Servlet%20Lifecycle.md)
+* [ServletConfig vs ServletContext](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/ServletConfigVSServletContext.md)
