@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+
+<!-- http://localhost:8080/request_params_war/user?firstname=Tina&lastname=Xing -->
+<form action="user" method="get">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="firstname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lastname"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<hr/>
+<!-- http://localhost:8080/request_params_war/user -->
+<form action="user" method="post">
+    <label for="firstname">First name:</label><br>
+    <input type="text" id="firstname" name="fname"><br>
+    <label for="lastname">Last name:</label><br>
+    <input type="text" id="lastname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
