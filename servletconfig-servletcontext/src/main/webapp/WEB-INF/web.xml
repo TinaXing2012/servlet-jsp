@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+   http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+  
+    <servlet>
+        <servlet-name>InitParamsServlet</servlet-name>
+        <servlet-class>miss.xing.InitParamsServlet</servlet-class>
+
+        <init-param>
+            <param-name>title</param-name>
+            <param-value>ServletConfigDemo</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>configStyle</param-name>
+            <param-value>XML</param-value>
+        </init-param>
+
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>InitParamsServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>author</param-name>
+        <param-value>Miss Xing</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>country</param-name>
+        <param-value>China</param-value>
+    </context-param>
+    
+</web-app>
