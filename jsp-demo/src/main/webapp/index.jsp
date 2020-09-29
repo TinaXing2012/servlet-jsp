@@ -28,5 +28,10 @@
     System.out.println("count: " + count);
     System.out.println("getCount(): " + getCount());
 %>
+
+<h2>Expression: the thing you put between the tags, are wrapped in out.print() under _jspService()</h2>
+
+<%= count %>
+<%= getCount()%>
 </body>
 </html>
