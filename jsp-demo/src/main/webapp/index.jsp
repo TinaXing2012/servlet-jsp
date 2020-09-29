@@ -20,5 +20,13 @@
         return count;
     }
 %>
+
+<h2>Scriptlet: all statements will be inserted into _jspService()</h2>
+<%
+    int count = 0;
+    count++;
+    System.out.println("count: " + count);
+    System.out.println("getCount(): " + getCount());
+%>
 </body>
 </html>
