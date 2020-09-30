@@ -1,3 +1,5 @@
+<%@ page import="java.time.LocalDateTime, java.time.LocalDate" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: rujuanxing
@@ -33,5 +35,14 @@
 
 <%= count %>
 <%= getCount()%>
+
+<h2>Directive: Page Directive</h2>
+<%
+    LocalDate currentDate = LocalDate.now();
+    LocalDateTime currentTime = LocalDateTime.now();
+%>
+<p>Today is  <%=currentDate%> </p>
+<p>Current Time is <%=currentTime%></p>
+
 </body>
 </html>
