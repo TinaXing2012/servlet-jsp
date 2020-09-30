@@ -13,6 +13,8 @@
     <title>Welcome</title>
 </head>
 <body>
+<%@ include file="header.jsp"%>
+
 <h1>Welcome to Miss Xing channel! Please like and subscribe!!!</h1>
 <h2>Declaration: used to insert instance variables and methods into generated servlet class</h2>
 <%!
@@ -44,5 +46,7 @@
 <p>Today is  <%=currentDate%> </p>
 <p>Current Time is <%=currentTime%></p>
 
+
+<%@include file="footer.jsp"%>
 </body>
 </html>
