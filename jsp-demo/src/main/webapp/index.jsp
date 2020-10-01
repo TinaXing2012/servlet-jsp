@@ -46,6 +46,9 @@
 <p>Today is  <%=currentDate%> </p>
 <p>Current Time is <%=currentTime%></p>
 
+<!-- HTML Comment -->
+
+<%-- JSP Comment --%>
 
 <%@include file="footer.jsp"%>
 </body>
