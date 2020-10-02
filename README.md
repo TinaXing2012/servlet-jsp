@@ -9,3 +9,4 @@
 * [The usage of @WebServlet annotation](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/%40WebServlet.md)
 * [Java/Jakarta Servlet Life Cycle](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/Servlet%20Lifecycle.md)
 * [ServletConfig vs ServletContext](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/ServletConfigVSServletContext.md)
+* [JSP Implicit Object - pageContext](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/pageContext.md)
