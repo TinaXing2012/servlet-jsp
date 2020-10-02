@@ -18,6 +18,10 @@ Use pageContext to set Attribute
 Use pageContext to get Attribute
 ```jsp
 <%
+    String name = (String) pageContext.getAttribute("user", PageContext.SESSION_SCOPE);
+    out.print("User: ");
+    out.print(name);
+     
     System.out.println(pageContext.getAttribute("weather")); //Page Scope
     System.out.println(pageContext.getAttribute("weather", PageContext.REQUEST_SCOPE));
     System.out.println(pageContext.getAttribute("favorite_kpop_group", PageContext.SESSION_SCOPE));
