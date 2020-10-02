@@ -1,7 +1,7 @@
 # JSP Implicit Object - pageContext
 
 In JSP, pageContext is an implicit object of type PageContext class.The pageContext object can be used to set,get or remove attribute from one of the following scopes:
-* page [PageContext.PAGE_SCOPE](default)
+* page [PageContext.PAGE_SCOPE] - This is default scope
 * request [PageContext.REQUEST_SCOPE]
 * session [PageContext.SESSION_SCOPE]
 * application [PageContext.APPLICATION_SCOPE]
