@@ -50,6 +50,12 @@
 
 <%-- JSP Comment --%>
 
+<%
+    String name = (String) pageContext.getAttribute("user", PageContext.SESSION_SCOPE);
+    out.print("User: ");
+    out.print(name);
+%>
+
 <%@include file="footer.jsp"%>
 </body>
 </html>
