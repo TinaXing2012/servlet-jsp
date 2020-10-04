@@ -18,5 +18,6 @@
 <p><a href="cookie">EL cookie Implicit Object</a> </p>
 <p><a href="employee">Display Employee Info</a></p>
 <p><a href="collectionaccessoperator.jsp">JSP EL [] Operator Demo</a> </p>
+<p><a href="arithmeticlogicalrelationaloperators.jsp">JSP EL Arithmetic, Logical, Relational Operators Demo </a> </p>
 </body>
 </html>
