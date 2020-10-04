@@ -15,13 +15,14 @@ public class EmployeeServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Employee employee = new Employee("1001", "Tina", "Xing");
+        Employee employee1 = new Employee("1001", "Tina", "Xing");
         Address address = new Address("1000 N 4th ST", "Fairfield", "Iowa");
-        employee.setAddress(address);
-        req.setAttribute("emp", employee);
+        employee1.setAddress(address);
+        req.setAttribute("emp", employee1);
 
         Employee employee2 = new Employee("1002", "Rujuan", "Xing");
-        req.setAttribute("emp2", employee2);
-        req.getRequestDispatcher("emp.jsp").forward(req, resp);
+        req.getSession().setAttribute("emp2", employee2);
+//        req.getRequestDispatcher("emp.jsp").forward(req, resp);
+        req.getRequestDispatcher("employee.jsp").forward(req, resp);
     }
 }
