@@ -13,6 +13,7 @@
     <title>Welcome</title>
 </head>
 <body>
+<p><a href="lifecycledemo.jsp">JSP Life CyCle Demo</a> </p>
 <%@ include file="header.jsp"%>
 
 <h1>Welcome to Miss Xing channel! Please like and subscribe!!!</h1>
