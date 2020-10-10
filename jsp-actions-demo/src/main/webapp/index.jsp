@@ -14,6 +14,7 @@
 
 <ul>
     <li><a href="jsp_forward.jsp">JSP Forward action</a> </li>
+    <li><a href="jsp_include.jsp">JSP Include Action</a> </li>
 </ul>
 
 </body>
