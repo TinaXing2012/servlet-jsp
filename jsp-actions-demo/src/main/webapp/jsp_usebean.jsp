@@ -24,7 +24,6 @@
 
 <p>2. Create a Bean</p>
 <jsp:useBean id="person2" type="miss.xing.model.Person" class="miss.xing.model.Employee">
-
 </jsp:useBean>
 <%--<jsp:useBean id="person2" type="miss.xing.model.Employee" beanName="miss.xing.model.Employee"></jsp:useBean>--%>
 
@@ -32,5 +31,27 @@
 <jsp:getProperty name="person2" property="lastName"/>
 <jsp:getProperty name="person2" property="salary"/>
 
+
+<p>3. demo for jsp:setProperty, property="*" to set all values from incoming request</p>
+<jsp:useBean id="person3" class="miss.xing.model.Person">
+<%--    <jsp:setProperty name="person3" property="*"></jsp:setProperty>--%>
+</jsp:useBean>
+<%--<jsp:setProperty name="person3" property="*"></jsp:setProperty>--%>
+<jsp:setProperty name="person3" property="firstName" param="first"></jsp:setProperty>
+<jsp:setProperty name="person3" property="lastName" param="last"></jsp:setProperty>
+
+<jsp:getProperty name="person3" property="firstName"/>
+<jsp:getProperty name="person3" property="lastName"/>
+
+<p>4. demo for jsp:setProperty, use value=""</p>
+<jsp:useBean id="person4" class="miss.xing.model.Employee" type="miss.xing.model.Person">
+    <jsp:setProperty name="person4" property="firstName" value="William"></jsp:setProperty>
+</jsp:useBean>
+<jsp:setProperty name="person4" property="lastName" value="Edward"></jsp:setProperty>
+<jsp:setProperty name="person4" property="salary" value="30000"></jsp:setProperty>
+
+<jsp:getProperty name="person4" property="firstName"/>
+<jsp:getProperty name="person4" property="lastName"/>
+<jsp:getProperty name="person4" property="salary"/>
 </body>
 </html>
