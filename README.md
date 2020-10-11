@@ -14,3 +14,4 @@
 * [JSP Expression Language Slides](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/JSP%20Expression%20Language.pdf)
 * [JSP Model 1 vs Model 2](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/JSP%20Model%201%20vs%20model%202.pdf)
 * [PRG Design Pattern](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/PRG%20Pattern.pdf)
+* [JSP Actions Tag](https://github.com/TinaXing2012/servlet-jsp/blob/master/notes/JSP%20Actions.pdf)
