@@ -17,6 +17,7 @@
     <li><a href="set_out.jsp">c:set and c:out</a> </li>
     <li><a href="xss_form.jsp">XSS Form</a> </li>
     <li><a href="xss">Dislay Blogs which used in XSS Test</a> </li>
+    <li><a href="c_if.jsp">c:if demo</a> </li>
 </ul>
 
 </body>
