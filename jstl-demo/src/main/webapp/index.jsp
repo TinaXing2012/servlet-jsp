@@ -19,6 +19,7 @@
     <li><a href="xss">Dislay Blogs which used in XSS Test</a> </li>
     <li><a href="c_if.jsp">c:if demo</a> </li>
     <li><a href="c_choose.jsp">c:choose, c:when, c:otherwise demo</a> </li>
+    <li><a href="foreach">c:forEach demo</a> </li>
 </ul>
 
 </body>
