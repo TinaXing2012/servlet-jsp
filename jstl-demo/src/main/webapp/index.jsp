@@ -14,7 +14,7 @@
 
 <ul>
     <li><a href="person">Why do we need JSTL? Example with Scriptlet to do loop</a> </li>
-    <li><a href="jstl_core.jsp">JSTL Demo</a> </li>
+    <li><a href="set_out.jsp">JSTL Demo</a> </li>
     <li><a href="xss_form.jsp">XSS Form</a> </li>
     <li><a href="xss">Dislay Blogs which used in XSS Test</a> </li>
 </ul>
