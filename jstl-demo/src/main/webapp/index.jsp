@@ -20,6 +20,7 @@
     <li><a href="c_if.jsp">c:if demo</a> </li>
     <li><a href="c_choose.jsp">c:choose, c:when, c:otherwise demo</a> </li>
     <li><a href="foreach">c:forEach demo</a> </li>
+    <li><a href="c_url.jsp">c:url, c:param demo</a> </li>
 </ul>
 
 </body>
