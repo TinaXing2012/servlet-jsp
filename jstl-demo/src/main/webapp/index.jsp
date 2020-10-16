@@ -22,6 +22,8 @@
     <li><a href="foreach">c:forEach demo</a> </li>
     <li><a href="c_url.jsp">c:url, c:param demo</a> </li>
 </ul>
+<hr/>
+<p><a href="jstl_function.jsp">JSTL Function Tag Library Demo</a> </p>
 
 </body>
 </html>
