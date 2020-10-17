@@ -24,6 +24,6 @@
 </ul>
 <hr/>
 <p><a href="jstl_function.jsp">JSTL Function Tag Library Demo</a> </p>
-
+<p><a href="jstl_format.jsp">JSTL Formatting Tag Library Demo</a> </p>
 </body>
 </html>
