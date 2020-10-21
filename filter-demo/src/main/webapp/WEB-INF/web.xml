@@ -21,6 +21,7 @@
     <filter-mapping>
         <filter-name>RequestLoggingFilter</filter-name>
         <url-pattern>/*</url-pattern>
+        <dispatcher>INCLUDE</dispatcher>
     </filter-mapping>
 
 </web-app>
