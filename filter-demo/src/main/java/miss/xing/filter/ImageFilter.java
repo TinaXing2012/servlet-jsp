@@ -7,11 +7,11 @@ import jakarta.servlet.annotation.WebInitParam;
 import java.io.IOException;
 import java.util.Enumeration;
 
-@WebFilter(urlPatterns = {"/web/*"}, initParams = {
-        @WebInitParam(name = "filter-name", value = "ImageFilter"),
-        @WebInitParam(name = "description", value = "Compress Image Size")
-}, dispatcherTypes = {DispatcherType.REQUEST, DispatcherType.FORWARD},
-servletNames = {"welcomeservlet"})
+//@WebFilter(urlPatterns = {"/web/*"}, initParams = {
+//        @WebInitParam(name = "filter-name", value = "ImageFilter"),
+//        @WebInitParam(name = "description", value = "Compress Image Size")
+//}, dispatcherTypes = {DispatcherType.REQUEST, DispatcherType.FORWARD},
+//servletNames = {"welcomeservlet"})
 public class ImageFilter implements Filter {
 
     @Override

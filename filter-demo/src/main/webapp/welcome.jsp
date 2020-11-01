@@ -11,7 +11,12 @@
     <title>Welcome</title>
 </head>
 <body>
+<h1>Welcome, ${username}</h1>
 <p>Request Attribute ${handsomeguy}</p>
+
+<form action="logout" method="post">
+    <input type="submit" value="logout">
+</form>
 
 </body>
 </html>

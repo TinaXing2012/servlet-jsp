@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Enumeration;
 
-@WebFilter(filterName = "loggingfilter")
+//@WebFilter(filterName = "loggingfilter")
 public class RequestLoggingFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

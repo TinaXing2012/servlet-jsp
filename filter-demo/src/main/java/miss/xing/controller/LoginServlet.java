@@ -5,6 +5,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -22,6 +23,9 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("password");
 
         if("admin".equals(username) && "123".equals(password)){
+            HttpSession session = req.getSession();
+            session.setAttribute("isLoggedIn", true);
+            session.setAttribute("username", username);
             resp.sendRedirect("welcome.jsp"); //this page should be only acccessed after login
         }else{
             resp.sendRedirect("login?error=true");
