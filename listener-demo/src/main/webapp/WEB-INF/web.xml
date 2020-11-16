@@ -7,5 +7,21 @@
 
     <display-name>Listener Demo</display-name>
 
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>bella</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>bella</param-value>
+    </context-param>
+    <context-param>
+        <param-name>driver</param-name>
+        <param-value>com.mysql.cj.jdbc.Driver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dburl</param-name>
+        <param-value>jdbc:mysql://192.168.0.3:3306/hibernatedemo2</param-value>
+    </context-param>
 
 </web-app>
